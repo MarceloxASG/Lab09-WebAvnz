@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 15px;">
+    <div class="container">
+      <a class="navbar-brand" href="#">AngularLab09</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link pointer" (click)="navigateTo('/cliente')">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pointer" (click)="navigateTo('/empleado')">Empleados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pointer" (click)="navigateTo('/factura')">Facturas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pointer" (click)="navigateTo('/producto')">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pointer" (click)="navigateTo('/proveedor')">Proveedores</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+  
+
+<h1>Bienvenidos a Angular</h1>
+
+<router-outlet></router-outlet>
+
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary" style="margin: 5px 10px;" (click)="navigateTo('/cliente')">Clientes</button>
+    <button type="button" class="btn btn-primary" style="margin: 5px 10px;" (click)="navigateTo('/empleado')">Empleados</button>
+    <button type="button" class="btn btn-primary" style="margin: 5px 10px;" (click)="navigateTo('/factura')">Facturas</button>
+    <button type="button" class="btn btn-primary" style="margin: 5px 10px;" (click)="navigateTo('/producto')">Productos</button>
+    <button type="button" class="btn btn-primary" style="margin: 5px 10px;" (click)="navigateTo('/proveedor')">Proveedores</button>
+</div>
+
